@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        nav{
+            padding: 20px 60px;
+        }
+        .logo, ul, li{
+            display: inline-block;
+        }
+        .logo img{
+            height: 65px;
+            width: 95px;
+        }
+        ul{
+            margin-left: 50px;
+           
+        }
+        li{
+            margin: 0 12px;
+            margin-bottom: 10px;
+        }
+        li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        .card{
+            width: 600px;
+            background-color: wheat;
+            height: 350px;
+            margin: auto;
+            position: relative;
+            border-radius: 15px;
+            position: relative;
+        }
+        .product{
+            width: 250px;
+            height: 250px;
+            background-color: rgb(195, 45, 45);
+            position: absolute;
+            top: 50px;
+            left: -100px;
+            border-radius: 12px;
+        }
+        .product img{
+            position: absolute;
+            height: 400px;
+            rotate: -45deg;
+            left: -100px;
+            top: -100px;
+        }
+        .card h1{
+            position: absolute;
+            top: 100px;
+            left: 160px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .card p{
+            position: absolute;
+            top: 160px;
+            left: 200px;
+            
+        }
+        .card button{
+            position: absolute;
+            bottom: 50px;
+            left: 200px;
+            background-color: royalblue;
+            color: white;
+            padding: 4px 12px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+        }
+        .card button i{
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        ul{
+            padding-left: 320px;
+            padding-bottom: 30px;
+            position: relative;
+            bottom:40px
+        }
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 50px;
+            margin-left: 140px;
+            margin-top: 30px;
+        }
+        .bgblack1{
+            background-color: black;
+            width: 250px;
+            height: 300px;
+            position:absolute;
+            left:100px;
+            top:50px
+        }
+        .bgblack2{
+            background-color: black;
+            width: 250px;
+            height: 300px;
+            position:absolute;
+            left:360px;
+            top:50px
+        }
+.firstimg img{
+
+rotate: -60deg;
+position: absolute;
+right: 10px;
+bottom: 10px;
+width:300px;
+height: 300px;
+}
+
+.secondimg img {
+    rotate: -60deg;
+    position: absolute;
+    width: 300px; /* Adjusted size */
+    height: 300px; /* Adjusted size */
+    right:10px;
+}
+
+
+.main3{
+    position:relative;
+    right:60px;
+}
+.bgblack3 {
+    background-color: black;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    left: 620px; /* Adjust position to the right of .bgblack2 */
+    top: 50px;
+}
+
+.thirdimg img {
+    rotate: -60deg;
+    position: absolute;
+    width: 300px;
+    height: 290px;
+    right: 10px;
+    bottom: 10px;
+}
+.bgblack4 {
+    background-color: black;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    left: 880px; /* Adjust position to the right of .bgblack3 */
+    top: 50px;
+}
+
+.fourthimg img {
+    rotate: -60deg;
+    position: absolute;
+    width:320px;
+    height: 220px;
+    right: 10px;
+    top:30px
+}
+
+.bgblack5 {
+    background-color: black;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    left: 1140px; /* Adjust position to the right of .bgblack4 */
+    top: 50px;
+}
+
+.fifthimg img {
+    rotate: -60deg;
+    position: absolute;
+    width: 300px;
+    height: 320px;
+    right: 10px;
+  bottom:1px
+}
+.main4 {
+    position: relative;
+    top: 400px;
+    height: 200px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    padding: 20px; /* Add some spacing */
+}
+
+.nikelogo {
+    margin-right: 20px; /* Add space between the logo and the links */
+}
+
+.nikelogo img {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 600px;
+    top:20px
+
+}
+.main4 ul{
+    position: absolute;
+    left:30px
+}
+
+.navbar {
+    background-color: rgba(128, 128, 128, 0.15);
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px; /* Vertically align items */
+    position: relative;
+}
+
+.navbar img{
+    width:50px;
+    height:50px;
+    position: relative;
+}
+.image-container {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust the height to cut the bottom part */
+    overflow: hidden; /* Ensures content outside the height is hidden */
+    position: absolute;
+    top:7px;
+    left:70px;
+}
+.navbar ul{
+    position: absolute;
+top:2px;
+text-align: end;
+right: 0;
+
+
+}
+.navbar li{
+    font-size:small;
+    font-weight:bold; 
+    margin-right: 1px; /* Reduced spacing between items */
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>     <img src="https://static.vecteezy.com/system/resources/thumbnails/027/127/562/small_2x/jordan-logo-jordan-icon-transparent-free-png.png" alt="jordan">
+        </div>
+        <div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Converse_logo.svg/2560px-Converse_logo.svg.png" alt="Converse">
+        </div>
+        <ul>
+            <li>Find a store |</li>
+            <li>Help us |</li>
+            <li>Join us |</li>
+            <li>Sign in </li>
+        </ul>
+    </div>
+    
+    
+    
+
+    <div class="main">
+        <nav>
+            <div>
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1000px-Logo_NIKE.svg.png" alt="Nature">
+            </div>
+        </div>
+            <ul>
+                <li><a href="/">New</a></li>
+                <li><a href="/">Men</a></li>
+                <li><a href="/">Women</a></li>
+                <li><a href="/">Kids</a></li>
+                <li><a href="/">Jordan</a></li>
+            </ul>
+        </nav>
+
+        <div class="card">
+            <div class="product">
+                <img src="https://static.nike.com/a/images/t_default/b14aba9a-f828-45d3-9607-b687b884aa7d/NIKE+REVOLUTION+7+EASYON.png" alt="shoes">
+            </div>
+
+            <h1>Nike Air Jorken</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, architecto? Nemo, optio. Tenetur officia aut blanditiis illo adipisci, harum consectetur in, asperiores quisquam, accusamus nobis.</p>
+            <button>Buy Now<i class="ri-shopping-cart-2-fill"></i></button>
+        </div>
+        <h1>Shop By Classics</h1>
+        <div class="main3">
+            <div class="bgblack1">
+            <div class="firstimg">
+                <img src="https://static.nike.com/a/images/t_default/lkwfba88t6qix4qxaavi/NIKE+ZOOM+VOMERO+5.png" alt="Vomero">
+            </div>
+            </div>
+
+            <div class="bgblack2">
+                <div class="secondimg">
+                    <img src="https://static.nike.com/a/images/t_default/4eea30b0-fcae-4804-a6b5-ac01a3cd1c93/NIKE+CORTEZ.png" alt="Cortez">
+                </div>
+                </div>
+             <div class="bgblack3">
+                <div class="thirdimg">
+                    <img src="https://static.nike.com/a/images/t_default/80b8277d-ede8-4885-9c37-2fe1cdf341aa/WMNS+AIR+MAX+90.png" alt="Air Max">
+                </div>
+            </div>
+            <div class="bgblack4">
+                <div class="fourthimg">
+                    <img src="https://sneak.eu/cdn/shop/files/sneak.fi-nike-dunk-low-two-tone-grey-3.webp?v=1688390225&width=720" alt="Dunk Low">
+                </div>
+            </div>
+            
+            <div class="bgblack5">
+                <div class="fifthimg">
+                    <img src="https://static.nike.com/a/images/t_default/7dcc6fd4-b41c-493e-85bd-58b8944b6b1d/W+BLAZER+MID+%2777.png" alt="Blazer Mid">
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="main4">
+    <div>
+        <div class="nikelogo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1000px-Logo_NIKE.svg.png" alt="Nature">
+        </div>
+    </div>
+    <ul>
+        <li><a href="/">Find a store</a></li>
+        <li><a href="/">Help</a></li>
+        <li><a href="/">Join Us</a></li>
+        <li><a href="/">Sign in</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
+
+
